@@ -1,0 +1,21 @@
+/*
+VSCodeの拡張機能を追加する。
+① Live Sass Compilerをインストールする。
+② setting.jsonファイルを開く。
+   VSCode上で下記の操作を行う
+  - mac(command + p) > 検索ワードからsetting.jsonを探して開く
+  - windows(ctrl + p) > 検索ワードからsetting.jsonを探し開く
+
+③ setting.jsonにSCSSのコンパイル設定を記述する(コピペする)。
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+
+④ VSCodeのフッターにWatchSassというボタンがあるので、必ず押してからSCSSファイルを扱う
+    押してある場合は、Watching...と表示されている
+*/
